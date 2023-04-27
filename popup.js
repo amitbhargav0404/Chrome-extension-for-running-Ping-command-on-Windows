@@ -10,6 +10,7 @@ chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
   elmHostName.innerText = hostname;
 
   chrome.runtime.sendMessage({ hostname: hostname }, (response) => {
-    elmResult.innerText = response.value;
+    const report = response.value.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    elmResult.innerHTML = report;
   });
 });
