@@ -53,7 +53,7 @@ In addition to installing the Chrome extension, you must also install the native
 1. Copy the ping folder to C:\Users\<username>\.
 2. Open the ping.reg file and add it to the Windows registry.
 3. Make sure that the path in ping.json matches the path to the ping.py file.
-
+4. Make sure user system install python. 
 ## Limitations
 
 This extension only works on Windows and requires the ping command to be installed. It may not work on some systems due to security restrictions.
