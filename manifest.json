@@ -1,0 +1,15 @@
+﻿{
+  "name": "Native messaging",
+  "manifest_version": 3,
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "nativeMessaging"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
